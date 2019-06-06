@@ -15,6 +15,7 @@
 En las entrevistas previas mis entrevistados fueron dos personas un doctor y un paciente Las preguntas fueron acerca de la confidencialidad de la entrega de datos y como se sentirían al tener una herramienta que les permita acceder a estos con total seguridad. Los resultados fueron positivos, ya que dijeron qeu sería muy útil y que lo usarían. Cabe resaltar que más allá de solo doctores y pacientes entra en escena la entidad, en este caso la clínica u hospital que concede usar esta página web, dejando este tema aparte a los entrevistados les agradó esta iniciativa por lo que resultó ser una idea útil.
 
 -Link de formulario de planificación : https://docs.google.com/document/d/1GrfllBJHUnJRPOSuoYgsr5X69wAfilb7P2zvDVqeY_c/edit
+..
 
 
 
