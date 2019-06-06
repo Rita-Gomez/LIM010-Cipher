@@ -1,67 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+# Cifrado César
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon-32x32.png" sizes="32x32"/>
-  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Sigmar+One|Sofia&display=swap" rel="stylesheet">
-  <title>Secret Data</title>
-</head>
-<header></header>
+## SECRET DATA
 
-<body background="fondo.jpg">
-  <div id="vista1">
-    <h1>SECRET DATA.</h1>
-    <p>Sabemos que la confidencialidad es importante, es por eso que esta página web es perfecta para ti.
-      Al modificar información solo se sabrá su significado al tener la contraseña correcta.</p>
-    <p>Por favor ingrese la contraseña</p>
-    <input type="password" id="password1">
-    <button type="button" id="aceptar1">Ingresar</button>
-    <h4 id="error"></h4>
-  </div>
-  <div id="vista2" class="hide">
-    <h1>SECRET DATA</h1>
-    <p>Sabemos que la confidencialidad es importante, es por eso que esta página web es perfecta para ti.
-      Al modificar información solo se sabrá su significado al tener la contraseña correcta.</p> <br>
-    <h1>Lo sentimos, ha superado el número de intentos :(</h1>
+-Es importante la confidencialidad de los resultados médicos, ya que hay muchos casos en los que se ha entregado al paciente un resultado no perteneciente. Es por eso que esta página ha sido creada.
 
-  </div>
-  <div id="vista3" class="hide">
-    <h1>Ingrese el texto en mayúsculas</h1>
-    <input type="text" id="text_cifrar" placeholder="CIFRAR TEXTO">
-    <input type="text" id="text_descifrar" placeholder="DESCIFRAR TEXTO">
-    <br><br>
-    <p>N° de desplazamientos</p>
-    <input type="number" id="selectnumbers">
-    <br><br><br>
-    <button class='cifrar1' type="submit" value="cifrado" id="cifrar">CIFRAR</button>
-    <button class='descifrar1' type="submit" value="descifrado" id="descifrar">DESCIFRAR</button>
+##Research UX
 
-  </div>
-  <div id="vista4" class="hide">
-    <h1>Tu texto ha sido cifrado con éxito</h1>
-    <p id="cifrar"></p>
-    <br><br>
-    <button type="button" id="back1">Ingresar un nuevo texto</button>
-  </div>
-  <div id="vista5" class="hide">
-    <h1>Tu texto ha sido descifrado con éxito</h1>
-    <p id="descifrar"></p>
-    <br><br>
-    <button type="button" id="back2">Ingresar un nuevo texto</button>
-  </div>
-  <script src="index.js"></script>
-  <script src="cipher.js"></script>
-  <footer>
-    <div class="container-footer">
-        © 2019 Todos los Derechos Reservados | <a href="">Rita Gómez H.</a>
-    </div>
-    
-  </footer>
-</body>
+°  Usuarios:  Personal médico/enfermerxs y los principales usuarios (pacientes)
+-°Objetivos: Enfatizar la privacidad de resultados médicos a los usuarios/pacientes.
+-°Soluciones que proporciona :Es importante la confidencialidad de los resultados médicos, ya que hay muchos casos en los que se ha entregado al paciente un resultado no perteneciente.
 
-</html>
-s
+-Feedback: En el primer feedback de equipo me ayudaron mucho a concretar el tema de mi proyecto, ya que tenía una idea pero no estaba segura de si era la correcta. Después de eso pude avanzar con los siguientes pasos.
+
+En las entrevistas previas mis entrevistados fueron dos personas un doctor y un paciente Las preguntas fueron acerca de la confidencialidad de la entrega de datos y como se sentirían al tener una herramienta que les permita acceder a estos con total seguridad. Los resultados fueron positivos, ya que dijeron qeu sería muy útil y que lo usarían. Cabe resaltar que más allá de solo doctores y pacientes entra en escena la entidad, en este caso la clínica u hospital que concede usar esta página web, dejando este tema aparte a los entrevistados les agradó esta iniciativa por lo que resultó ser una idea útil.
+
+-Link de formulario de planificación : https://docs.google.com/document/d/1GrfllBJHUnJRPOSuoYgsr5X69wAfilb7P2zvDVqeY_c/edit
+
+
+
+
