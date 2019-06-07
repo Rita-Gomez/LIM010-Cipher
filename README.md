@@ -38,6 +38,6 @@ Este sitio esta creado para que el mensaje sea encriptado de manera confidencial
 
 ## Feedback
 
-[image1.jpg]
+![image1](image1.jpg)
 En el feedback de las mejoras que realicé en prototipo de papel es generar una sola pantalla para cifrar y descifrar, ya no como muestro en la figura 1,
 generando en pantallas diferentes.
