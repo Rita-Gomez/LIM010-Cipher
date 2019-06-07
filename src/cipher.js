@@ -1,8 +1,6 @@
 window.cipher = {
-  encode: (offset, string) => {
-    /* Acá va tu código que cifra*/
+  encode: (string, offset) => {
   },
-  decode: (offset, string) => {
-    /* Acá va tu código que descifra*/
+  decode: (string, offset) => {
   }
 };

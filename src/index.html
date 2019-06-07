@@ -6,10 +6,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1 id="dato" class="hide"></h1>
+    </header>
+    <main>
+      <div id="page1" class="page1">
+        <img src="image/avatar.jpg" class="avatar">
+        <h1 class="titulo">Movie Login</h1>
+        <div class="form">
+          <p>Ingresar su usuario :</p>
+          <input type="text" id="name" placeholder="Enter Username">
+          <p>Ingresar su contraseña :</p>
+          <input type="password" id="pass1" placeholder="Enter Password">
+          <button id="btn1">Ingresar</button>
+          <p id="texto"></p>
+        </div>
+      </div>
+
+      <div id="page2" class="hide">
+        <h1 class="titulo">For Spoilers</h1>
+        <div class="form1">
+          <p>Comentar Pelicula:</p>
+          <textarea name="comenta" id="comenta" cols="22" rows="3" placeholder="Escribe tu comentario"></textarea>
+          <p>Mes de estreno:</p>
+          <input type="number" id="number">
+          <div class="botones">
+            <button id="btn2">Cifrar</button>
+            <button id="btn3">Descifrado</button>
+          </div>
+          <textarea name="resultado" id="resultado" cols="22" rows="3" placeholder="Mostrar el resultado"></textarea>
+          <button id="btn4">Limpiar</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="pie1">
+      <h1 class="pie">Copyright © 2019 all right reserved. Developed by Andrea Moscoso S.</h1>
+      </div>
+    </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+
+
