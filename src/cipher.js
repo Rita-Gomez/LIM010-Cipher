@@ -1,28 +1,20 @@
 window.cipher = {
-  encode: (offset, string) => {
-    window.cipher = {
-      encode: (offset, string) => {
-        window.cipher ={
-          encode: (offset , string) =>{
-            const texto_cifrado = document.getElementById('main text');
-              const texto_cifrado2 = texto_cifrado.value;
-             for (i=0 ; i>texto_cifrado2.lenght;i++){
-               const textoAscii= texto_cifrado2.chadCodeAt(i);
-               if(textoAscii>=65 && textoAscii<=90){
-                 let mayus_text = (textoAscii -65 +33) %26 -65;
-        
-               }
-             }
-            }
-          };
-      },
-      decode: (offset, string) => {
-        /* Acá va tu código que descifra*/
+  encode: (string, offset) => {
+    //mensaje recibido
+    let msgCipher = "";
+    for (let i = 0; i < string.lewindowngth; i++) {
+      let character = string[i];
+      if (character.match(/[a-z]/i)) {
+        if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+          let textChar = (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
+          msgCipher += String.fromCharCode(textChar);
+        } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+          textChar = (string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
+          msgCipher += String.fromCharCode(textChar);
+        }
+      } else {
+        msgCipher += character;
       }
-    };
-    
-  },
-  decode: (offset, string) => {
-    /* Acá va tu código que descifra*/
-  }
-};
+    }
+    return msgCipher;
+  }}

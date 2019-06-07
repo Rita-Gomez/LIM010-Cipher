@@ -2,6 +2,7 @@ const contra = document.getElementById('password1');
 let text_cifrar= document.getElementById('text_cifrar');
 let text_descifrar=document.getElementById('text_descifrar');
 
+
 //BOTONES
 const aceptar = document.getElementById('aceptar1');
 const cifrar = document.getElementById('cifrar');
@@ -37,15 +38,21 @@ aceptar.addEventListener('click', () => {
     }
 });
 cifrar.addEventListener('click', function()  {
+
     let text_cifrar = document.getElementById('text_cifrar').value;
+    console.log(text_cifrar)
     let number_cifrar= document.getElementById('selectnumbers').value;
+    console.log(number_cifrar)
     vista_3.classList.add('hide');
     vista_4.classList.remove('hide');
-    document.getElementById('cifrar').innerHTML= window.cipher.encode;
+    document.getElementById('cifrar1').innerHTML.window.cipher.encode(msgCipher)
 });
 descifrar.addEventListener('click', () => {
+    let text_descifrar = document.getElementById('text_descifrar').value;
+    let number_descifrar = document.getElementById('selectnumbers').value;
     vista_3.classList.add('hide');
     vista_5.classList.remove('hide');
+    document.getElementById('descifrar').innerHTML.window.decode(msgCipher);
 });
 back_one.addEventListener('click', () => {
     vista_4.classList.add('hide');
