@@ -1,7 +1,6 @@
 const contra = document.getElementById('password1');
-let text_cifrar= document.getElementById('text_cifrar');
-let text_descifrar=document.getElementById('text_descifrar');
-
+let texto_cifrar= document.getElementById('text_cifrar');
+let texto_descifrar=document.getElementById('text_descifrar');
 
 //BOTONES
 const aceptar = document.getElementById('aceptar1');
@@ -37,22 +36,32 @@ aceptar.addEventListener('click', () => {
         
     }
 });
-cifrar.addEventListener('click', function()  {
-
-    let text_cifrar = document.getElementById('text_cifrar').value;
+cifrar.addEventListener('click', function cifrarTexto()  {
+    let text_cifrar = texto_cifrar.value;
     console.log(text_cifrar)
-    let number_cifrar= document.getElementById('selectnumbers').value;
+    let number_cifrar= numeros.value;
     console.log(number_cifrar)
     vista_3.classList.add('hide');
     vista_4.classList.remove('hide');
-    document.getElementById('cifrar1').innerHTML.window.cipher.encode(msgCipher)
+     cifrar.value= text_cifrar;
+    cifrar.value= window.cipher.encode(text_cifrar,number_cifrar);
+    console.log(cifrar.value)
+    document.getElementById('cifrar_1').innerHTML = cifrar.value;
+    
+
+
 });
-descifrar.addEventListener('click', () => {
-    let text_descifrar = document.getElementById('text_descifrar').value;
-    let number_descifrar = document.getElementById('selectnumbers').value;
+descifrar.addEventListener('click',function descifrarTexto ()  {
+    let text_descifrar = texto_descifrar.value;
+    console.log(text_descifrar)
+    let number_descifrar = numeros.value;
+    console.log(number_descifrar)
     vista_3.classList.add('hide');
     vista_5.classList.remove('hide');
-    document.getElementById('descifrar').innerHTML.window.decode(msgCipher);
+    descifrar.value= text_descifrar;
+    descifrar.value= window.cipher.decode(text_descifrar,number_descifrar);
+    console.log(descifrar.value)
+    document.getElementById('descifrar_1').innerHTML = descifrar.value;
 });
 back_one.addEventListener('click', () => {
     vista_4.classList.add('hide');
@@ -62,4 +71,5 @@ back_two.addEventListener('click', () => {
     vista_5.classList.add('hide');
     vista_3.classList.remove('hide');
 });
+
 

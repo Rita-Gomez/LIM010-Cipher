@@ -10,30 +10,32 @@ header{
     background: url(Logo.png);
 
 }
-p{
+p , #error {
     font-size: 30px;
-    color: black;
-    background: url(fondoDivs.jpg);
+    color: #202530;
     text-align: center;
     font-family: 'Berkshire Swash', cursive;
     margin: 2%;
+    
     }
  
     
 #password1 , #text_cifrar, #text_descifrar , h2{
-    color: #d81010;
+    color: #596D77;
     font-size: 30px;
     border-radius: 30px;
     margin-left: 40px;
     margin-right: 40px;
     
+    
 }
 input{
  border: 30px;
- background: url(fondoDivs.jpg);
+ 
  border:2px solid black;
  width: 300px;
  height: 35px;
+ margin: auto;
 }
 .cifrar1, .descifrar1{
     height: 70px ;
@@ -42,7 +44,7 @@ input{
   
 
 }
-button{
+button {
     border-radius: 30px;
     background: black;
     color: aliceblue;
@@ -72,9 +74,11 @@ button:hover{
       margin-left: 40px;
       margin-right: 40px;
       font-family: 'Sofia', cursive;
+      background-color: #C2AF99;
+      
   }
-h1 , h4{
-    color: black;
+h1 {
+    color: #401127;
     font-size:60px;
     font-weight: 900;
     margin: 0%;
@@ -83,8 +87,8 @@ h1 , h4{
 #selectnumbers {
     width: 70px;
     height: 30px;
-    background-color: #d81010
-   
+    background-color: #797780;
+   border-radius: 25%;
 }
 html {
     min-height: 100%;
@@ -95,7 +99,7 @@ html {
     margin-bottom: 40px;
   }
   footer {
-    background-color: black;
+    background-color: #5E1831;
     position: absolute;
     bottom: 0;
     width: 100%;

@@ -1,20 +1,33 @@
 window.cipher = {
-  encode: (string, offset) => {
+  encode: (text_cifrar, number_cifrar) => {
     //mensaje recibido
-    let msgCipher = "";
-    for (let i = 0; i < string.lewindowngth; i++) {
-      let character = string[i];
-      if (character.match(/[a-z]/i)) {
-        if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
-          let textChar = (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
-          msgCipher += String.fromCharCode(textChar);
-        } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
-          textChar = (string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
-          msgCipher += String.fromCharCode(textChar);
+    let mensajecifrado1 = "";
+       for (let i = 0; i < text_cifrar.length; i++) {
+      let letrasCifrado = text_cifrar[i];
+      if (letrasCifrado.match(/[a-z]/i)){
+        if(text_cifrar.charCodeAt(i) >= 65 && text_cifrar.charCodeAt(i) <= 90 ){
+          let text_ready = (text_cifrar.charCodeAt(i) - 65 + parseInt(number_cifrar)) %26 +65;
+          mensajecifrado1+= String.fromCharCode(text_ready);
         }
-      } else {
-        msgCipher += character;
+      
       }
+
+      
+      
     }
-    return msgCipher;
-  }}
+    return mensajecifrado1;
+    
+  },
+  decode: (text_descifrar, number_descifrar) => {
+     let mensajedescifrado1 = "";
+     for (let i =0;i< text_descifrar.length ; i++){
+       let letrasDescifrado = text_descifrar[i];
+       if(letrasDescifrado.match(/[a-z]/i)){
+         if(text_descifrar.charCodeAt(i) >= 65 && text_descifrar.charCodeAt(i)<=90){
+           let text_ready1 = (text_descifrar.charCodeAt(i) + 65 - parseInt(number_descifrar)) %26 +65;
+           mensajedescifrado1 += String.fromCharCode(text_ready1);
+         }
+       }
+     }
+     return mensajedescifrado1;
+ } };
