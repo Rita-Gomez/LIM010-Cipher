@@ -1,6 +1,6 @@
 const contra = document.getElementById('password1');
-let texto_cifrar= document.getElementById('text_cifrar');
-let texto_descifrar=document.getElementById('text_descifrar');
+let texto_cifrar = document.getElementById('text_cifrar');
+let texto_descifrar = document.getElementById('text_descifrar');
 
 //BOTONES
 const aceptar = document.getElementById('aceptar1');
@@ -29,37 +29,34 @@ aceptar.addEventListener('click', () => {
         else {
             document.getElementById('error').innerHTML = 'Contraseña incorrecta'
             password++;
-           }
+        }
     } else {
         vista_1.classList.add('hide');
         vista_2.classList.remove('hide');
-        
+
     }
 });
-cifrar.addEventListener('click', function cifrarTexto()  {
+cifrar.addEventListener('click', function cifrarTexto() {
     let text_cifrar = texto_cifrar.value;
     console.log(text_cifrar)
-    let number_cifrar= numeros.value;
+    let number_cifrar = numeros.value;
     console.log(number_cifrar)
     vista_3.classList.add('hide');
     vista_4.classList.remove('hide');
-     cifrar.value= text_cifrar;
-    cifrar.value= window.cipher.encode(text_cifrar,number_cifrar);
+    cifrar.value = text_cifrar;
+    cifrar.value = window.cipher.encode(text_cifrar, number_cifrar);
     console.log(cifrar.value)
     document.getElementById('cifrar_1').innerHTML = cifrar.value;
-    
-
-
-});
-descifrar.addEventListener('click',function descifrarTexto ()  {
+    });
+descifrar.addEventListener('click', function descifrarTexto() {
     let text_descifrar = texto_descifrar.value;
     console.log(text_descifrar)
     let number_descifrar = numeros.value;
     console.log(number_descifrar)
     vista_3.classList.add('hide');
     vista_5.classList.remove('hide');
-    descifrar.value= text_descifrar;
-    descifrar.value= window.cipher.decode(text_descifrar,number_descifrar);
+    descifrar.value = text_descifrar;
+    descifrar.value = window.cipher.decode(text_descifrar, number_descifrar);
     console.log(descifrar.value)
     document.getElementById('descifrar_1').innerHTML = descifrar.value;
 });
