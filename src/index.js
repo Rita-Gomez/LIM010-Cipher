@@ -12,23 +12,41 @@ element.addEventListener("click", () =>{
         document.getElementById('dato').classList.remove('hide');
         document.getElementById('page2').classList.remove('hide');
     } else {
-        info = document.getElementById("texto");
-        info.innerHTML = `Contraseñ@ ${mensaje[0]}`;
-        intentos = intentos +1;
-        if (intentos == 1){
+      info = document.getElementById("texto");
+      info.innerHTML = `Contraseñ@ ${mensaje[0]}`;
+      intentos = intentos + 1;
+      if (intentos == 1) {
         info = document.getElementById("texto");
         info.innerHTML = `Contraseñ@ ${mensaje[1]}`;
-        } if (intentos == 2) {
+      }
+      if (intentos == 2) {
         info = document.getElementById("texto");
         info.innerHTML = `Contraseñ@ ${mensaje[2]}`;
       }
     }
 });
 
+/*Funcionalidad del cifrado*/
+const btnCifrar = document.getElementById("btn2");
+btnCifrar.addEventListener("click", () => {
+  let textoCifrado = document.getElementById("comenta").value;
+  let numero = document.getElementById("number").value;
+  document.getElementById("resultado").innerHTML = cipher.encode(numero, textoCifrado);
+});
+
+/*Funcionalidad del descifrado*/
+const btnDescifrar = document.getElementById("btn3");
+btnDescifrar.addEventListener("click", () =>{
+  let textoDescifrado = document.getElementById("comenta").value;
+  let numero = document.getElementById("number").value;
+  document.getElementById("resultado").innerHTML = cipher.decode(numero, textoDescifrado);
+});
+
+
 /*limpiando los valores ingresados y mostrados*/
 
 const btnLimpiar = document.getElementById("btn4");
-btnLimpiar.addEventListener("click", function () {
+btnLimpiar.addEventListener("click", () => {
   document.getElementById("resultado").innerHTML = "";
   document.getElementById("comenta").value = "";
   document.getElementById("number").value = "";
