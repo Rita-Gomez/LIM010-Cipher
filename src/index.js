@@ -18,8 +18,7 @@ element.addEventListener("click", () =>{
       if (intentos == 1) {
         info = document.getElementById("texto");
         info.innerHTML = `Contraseñ@ ${mensaje[1]}`;
-      }
-      if (intentos == 2) {
+      } if (intentos == 2) {
         info = document.getElementById("texto");
         info.innerHTML = `Contraseñ@ ${mensaje[2]}`;
       }
@@ -42,9 +41,16 @@ btnDescifrar.addEventListener("click", () =>{
   document.getElementById("resultado").innerHTML = cipher.decode(numero, textoDescifrado);
 });
 
+/*Regresar al menu principal*/
+const btnRegresar = document.getElementById("btn5");
+btnRegresar.addEventListener("click", () => {
+  document.getElementById('page2').classList.add('hide');
+  document.getElementById('dato').classList.add('hide');
+  document.getElementById("pass1").value = "";
+  document.getElementById('page1').classList.remove('hide');
+});
 
 /*limpiando los valores ingresados y mostrados*/
-
 const btnLimpiar = document.getElementById("btn4");
 btnLimpiar.addEventListener("click", () => {
   document.getElementById("resultado").innerHTML = "";

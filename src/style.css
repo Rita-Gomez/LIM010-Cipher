@@ -1,5 +1,6 @@
 /* Acá van tus reglas de estilo */
 body{
+  overflow: hidden;
   margin: 0 auto;
   height: 768px;
   padding: 0;
@@ -24,15 +25,15 @@ body{
   text-decoration: none;
 }
 #page1 {
-  width: 320px;
-  height: 485px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  left: 37%;
-  position: relative;
-  margin-top: 10.5%;
-  box-sizing: border-box;
-  padding: 70px 30px;
+   width: 320px;
+   height: 485px;
+   background: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   left: 37%;
+   position: relative;
+   margin-top: 5%;
+   padding: 15px;
+   margin-bottom: calc(8.5% - 56.5px);
 }
 #page2 {
   width: 320px;
@@ -41,23 +42,30 @@ body{
   color: #fff;
   left: 37%;
   position: relative;
-  margin-top: calc(6.5% - 30px);
   padding: 15px;
+  margin-bottom: calc(6.5% - 36.5px);
 }
 .titulo{
   text-align: center;
+  margin-top: 93px;
+}
+.titulo1 {
+  text-align: center;
+  margin-top: 27px;
 }
 #texto{
-      text-align: center;
+  margin-left: calc(-28% - 11px);
+  padding: 16px;
+  max-width: 318px;
+  text-align: center;
 }
+
 .form {
   width: 268px;
   height: 356px;
-  top: 50%;
-  left: 50%;
+  top: 19%;
+  left: 13%;
   position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
   padding: 70px 40px;
 }
 .form1 {
@@ -91,13 +99,17 @@ body{
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-  margin-top: 15%;
-  margin-left: 18%;
+  margin-top: 20%;
+  margin-left: 10%;
   cursor: pointer;
 }
 .botones{
   display: flex;
   margin-bottom: 25px;
+}
+.botones1{
+  display: flex;
+    margin-left: calc(0% - 44px);
 }
 #btn2{
   border: none;
@@ -127,6 +139,20 @@ body{
 }
 
 #btn4{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 130px;
+  background: #8c230f;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-left: 18%;
+  cursor: pointer;
+}
+
+#btn5{
   border: none;
   outline: none;
   height: 40px;
