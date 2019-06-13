@@ -8,7 +8,14 @@ body{
   background: url(image/fondo\ 35.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  animation: animate 15s linear infinite;
+  animation: animate 2s infinite .2s ease-in-out;
+}
+@-webkit-keyframes animate{
+  from {
+    background-position: 0 0;
+  } to {
+    background-position: 100% 0;
+  }
 }
 @keyframes animate{
   from{
@@ -17,7 +24,6 @@ body{
     background-position: 100% 0;
   }
 }
-
 #dato{
   color: white;
   font-size: 30px;
@@ -59,7 +65,9 @@ body{
   max-width: 318px;
   text-align: center;
 }
-
+.mes{
+  width: 115px;
+}
 .form {
   width: 268px;
   height: 356px;
@@ -103,6 +111,12 @@ body{
   margin-left: 10%;
   cursor: pointer;
 }
+#btn1:hover{
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
+}
 .botones{
   display: flex;
   margin-bottom: 25px;
@@ -114,30 +128,26 @@ body{
 #btn2{
   border: none;
   outline: none;
-  height: 40px;
-  width: 130px;
+  width: 40px;
+  padding: 7px;
   background: #8c230f;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-  margin-top: 15%;
   cursor: pointer;
 }
-
 #btn3{
   border: none;
   outline: none;
-  height: 40px;
-  width: 130px;
+  width: 40px;
+  padding: 7px;
   background: #8c230f;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
   margin-top: 15%;
-  margin-left: 18%;
   cursor: pointer;
 }
-
 #btn4{
   border: none;
   outline: none;
@@ -151,7 +161,6 @@ body{
   margin-left: 18%;
   cursor: pointer;
 }
-
 #btn5{
   border: none;
   outline: none;
@@ -165,7 +174,6 @@ body{
   margin-left: 18%;
   cursor: pointer;
 }
-
 .page1 input[type = "text"],
 .page1 input[type = "password"]{
   border: none;
@@ -181,19 +189,39 @@ body{
   border-bottom: 1px solid #fff;
   background: transparent;
   outline: none;
-  height: 40px;
+  width: 100px;
+  margin-top: 20%;
   color: #fff;
   font-size: 16px;
 }
+.columna{
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.columna-2{
+  width: 50%;
+}
+.mostrar-izquierda{
+  right: 7%;
+}
+.mostrar-derecha {
+  left: 70%;
+  margin-top: calc(-38%);
+  display: inline-grid;
+}
 #comenta,
 #resultado{
+  width: 197px;
+  height: 63px;
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
   outline: none;
-  height: 40px;
   color: #fff;
   resize: none;
+  margin-top: 7%;
   font-size: 16px;
 }
 footer{

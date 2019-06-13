@@ -6,20 +6,20 @@ element.addEventListener("click", () =>{
     const pass1 = document.getElementById('pass1').value;
     const nameUser = document.getElementById('name').value.toUpperCase();
     if (pass1 == 'LABORATORIA') {
-      info = document.getElementById("dato");
+      let info = document.getElementById("dato");
       info.innerHTML = `BIENVENIDA  ${nameUser}`;
         document.getElementById('page1').classList.add('hide');
         document.getElementById('dato').classList.remove('hide');
         document.getElementById('page2').classList.remove('hide');
     } else {
-      info = document.getElementById("texto");
+      let info = document.getElementById("texto");
       info.innerHTML = `Contraseñ@ ${mensaje[0]}`;
       intentos = intentos + 1;
       if (intentos == 1) {
-        info = document.getElementById("texto");
+        let info = document.getElementById("texto");
         info.innerHTML = `Contraseñ@ ${mensaje[1]}`;
       } if (intentos == 2) {
-        info = document.getElementById("texto");
+        let info = document.getElementById("texto");
         info.innerHTML = `Contraseñ@ ${mensaje[2]}`;
       }
     }
@@ -47,6 +47,7 @@ btnRegresar.addEventListener("click", () => {
   document.getElementById('page2').classList.add('hide');
   document.getElementById('dato').classList.add('hide');
   document.getElementById("pass1").value = "";
+  document.getElementById("name").value = "";
   document.getElementById('page1').classList.remove('hide');
 });
 

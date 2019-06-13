@@ -28,16 +28,18 @@
         <h1 class="titulo1">For Spoilers</h1>
         <div class="form1">
           <p>Comentar Pelicula:</p>
-          <textarea name="comenta" id="comenta" cols="22" rows="3" placeholder="Escribe tu comentario"></textarea>
-          <p>Mes de estreno:</p>
-          <input type="number" id="number" placeholder="Escribe el n° del mes">
-          <div class="botones">
-            <button id="btn2">Cifrar</button>
-            <button id="btn3">Descifrado</button>
+          <textarea name="comenta" id="comenta" cols="22" rows="0" placeholder="Escribe tu comentario"></textarea>
+          <div class="columna columna-2 mostrar-izquierda">
+          <p class="mes">Mes de estreno:</p>
+          <input type="number" id="number" placeholder="n° del mes">
           </div>
-          <textarea name="resultado" id="resultado" cols="22" rows="3" placeholder="Mostrar el resultado"></textarea>
+          <div class="columna columna-2 mostrar-derecha">
+            <button id="btn2"><i class="fas fa-lock"></i></button>
+            <button id="btn3"><i class="fas fa-unlock"></i></button>
+          </div>
+          <textarea name="resultado" id="resultado" cols="22" rows="0" placeholder="Mostrar el resultado"></textarea>
           <div class="botones1">
-            <button id="btn4">Limpiar</button>
+            <button id="btn4"><i class="fas fa-trash"></i></button>
             <button id="btn5"><i class="fa fa-home"></i></button>
           </div>
         </div>
