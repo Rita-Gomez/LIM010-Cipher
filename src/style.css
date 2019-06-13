@@ -117,8 +117,9 @@ h1 {
 }
 body {
     margin: 0;
-    background: url(fondo2.jpg);
+    background: url(fondo2.jpg) center;
     background-repeat: no-repeat;
+    
 }
   footer  {
     background-color: #a30001;
