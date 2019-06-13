@@ -1,7 +1,6 @@
 const contra = document.getElementById('password1');
 let texto_cifrar = document.getElementById('text_cifrar');
 let texto_descifrar = document.getElementById('text_descifrar');
-
 //BOTONES
 const aceptar = document.getElementById('aceptar1');
 const cifrar = document.getElementById('cifrar');
@@ -21,8 +20,8 @@ let password = 0;
 aceptar.addEventListener('click', () => {
     const contra1 = contra.value;
 
-    if (password <= 2) {
-        if (contra1 === 'LABORATORIA') {
+    if (password < 2) {
+        if (contra1 === 'L') {
             vista_1.classList.add('hide');
             vista_3.classList.remove('hide');
         }
@@ -36,28 +35,22 @@ aceptar.addEventListener('click', () => {
 
     }
 });
-cifrar.addEventListener('click', function cifrarTexto() {
+cifrar.addEventListener('click', () => {
     let text_cifrar = texto_cifrar.value;
-    console.log(text_cifrar)
     let number_cifrar = numeros.value;
-    console.log(number_cifrar)
     vista_3.classList.add('hide');
     vista_4.classList.remove('hide');
     cifrar.value = text_cifrar;
-    cifrar.value = window.cipher.encode(text_cifrar, number_cifrar);
-    console.log(cifrar.value)
+    cifrar.value = cipher.encode(text_cifrar, number_cifrar);
     document.getElementById('cifrar_1').innerHTML = cifrar.value;
-    });
-descifrar.addEventListener('click', function descifrarTexto() {
+});
+descifrar.addEventListener('click', () => {
     let text_descifrar = texto_descifrar.value;
-    console.log(text_descifrar)
     let number_descifrar = numeros.value;
-    console.log(number_descifrar)
     vista_3.classList.add('hide');
     vista_5.classList.remove('hide');
     descifrar.value = text_descifrar;
-    descifrar.value = window.cipher.decode(text_descifrar, number_descifrar);
-    console.log(descifrar.value)
+    descifrar.value = cipher.decode(text_descifrar, number_descifrar);
     document.getElementById('descifrar_1').innerHTML = descifrar.value;
 });
 back_one.addEventListener('click', () => {
