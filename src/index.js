@@ -21,7 +21,7 @@ aceptar.addEventListener('click', () => {
     const contra1 = contra.value;
 
     if (password < 2) {
-        if (contra1 === 'L') {
+        if (contra1 === 'LABORATORIA') {
             vista_1.classList.add('hide');
             vista_3.classList.remove('hide');
         }

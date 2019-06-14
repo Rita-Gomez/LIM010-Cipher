@@ -4,7 +4,7 @@
 
 -Es importante la confidencialidad de los resultados médicos, ya que hay muchos casos en los que se ha entregado al paciente un resultado no perteneciente. Es por eso que esta página ha sido creada.
 
-##Research UX
+##   Research UX
 
 °  Usuarios:  Personal médico/enfermerxs y los principales usuarios (pacientes)
 -°Objetivos: Enfatizar la privacidad de resultados médicos a los usuarios/pacientes.
@@ -29,4 +29,5 @@ En las entrevistas previas mis entrevistados fueron dos personas un doctor y un 
 
 -Después de tomar en cuenta el feedback de mis compañeras, hice cambios en CSS, tanto para el color de textos y botones, y por último, el fondo de la página.
  
+## Imagen final de mi vista principal.
 <img src="./src/Balsamiq/final1.jpg">
