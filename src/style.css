@@ -1,0 +1,276 @@
+/* Acá van tus reglas de estilo */
+body{
+  overflow: hidden;
+  margin: 0 auto;
+  height: 768px;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(image/fondo\ 35.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: animate 2s infinite .2s ease-in-out;
+}
+@-webkit-keyframes animate{
+  from {
+    background-position: 0 0;
+  } to {
+    background-position: 100% 0;
+  }
+}
+@keyframes animate{
+  from{
+    background-position: 0 0;
+  } to {
+    background-position: 100% 0;
+  }
+}
+#dato{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Kreon', serif;
+}
+#page1 {
+   width: 320px;
+   height: 485px;
+   background: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   left: 37%;
+   position: relative;
+   margin-top: 5%;
+   padding: 15px;
+   margin-bottom: calc(8.5% - 58.5px);
+}
+#page2 {
+  width: 320px;
+  height: 485px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  left: 37%;
+  position: relative;
+  padding: 15px;
+  margin-bottom: calc(6.5% - 43.5px);
+}
+.titulo{
+  text-align: center;
+  margin-top: 93px;
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
+}
+.titulo1 {
+  text-align: center;
+  margin-top: 27px;
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
+}
+p{
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
+  font-family: 'Cardo',
+  serif;
+  font-family: 'Kalam',
+  cursive;
+}
+#texto{
+  margin-left: calc(-28% - 11px);
+  padding: 16px;
+  max-width: 318px;
+  text-align: center;
+}
+.mes{
+  width: 115px;
+}
+.form {
+  width: 268px;
+  height: 356px;
+  top: 19%;
+  left: 13%;
+  position: absolute;
+  padding: 70px 40px;
+}
+.form1 {
+  width: 289px;
+  height: 454px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 40px;
+}
+.hide{
+  display: none;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(30% - 194px);
+  left: calc(50% - 50px);
+  transition: all .3s ease-in;
+}
+#btn1{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 130px;
+  background: #8c230f;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 20%;
+  margin-left: 10%;
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
+  font-family: 'Cardo',
+  serif;
+  font-family: 'Kalam',
+  cursive;
+  font-family: 'Acme',
+  sans-serif;
+  cursor: pointer;
+}
+#btn1:hover{
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
+}
+.botones{
+  display: flex;
+  margin-bottom: 25px;
+}
+.botones1{
+  display: flex;
+    margin-left: calc(0% - 44px);
+}
+#btn2{
+  border: none;
+  outline: none;
+  width: 40px;
+  padding: 7px;
+  background: #8c230f;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#btn3{
+  border: none;
+  outline: none;
+  width: 40px;
+  padding: 7px;
+  background: #8c230f;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 15%;
+  cursor: pointer;
+}
+#btn4{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 130px;
+  background: #8c230f;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-left: 18%;
+  cursor: pointer;
+}
+#btn4:hover {
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
+}
+#btn5{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 130px;
+  background: #8c230f;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-left: 18%;
+  cursor: pointer;
+}
+#btn5:hover {
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
+}
+.page1 input[type = "text"],
+.page1 input[type = "password"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+#number{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  width: 100px;
+  margin-top: 20%;
+  color: #fff;
+  font-size: 16px;
+}
+.columna{
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.columna-2{
+  width: 50%;
+}
+.mostrar-izquierda{
+  right: 7%;
+}
+.mostrar-derecha {
+  left: 70%;
+  margin-top: calc(-38%);
+  display: inline-grid;
+}
+#comenta,
+#resultado{
+  width: 197px;
+  height: 63px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  resize: none;
+  margin-top: 7%;
+  font-size: 16px;
+}
+footer{
+ background: rgba(0, 0, 0, 0.5);
+ font-weight: 900;
+ color:#fff;
+ text-align: center;
+ font-size: 12px;
+ max-width: 100%;
+ margin: 0 auto;
+}
