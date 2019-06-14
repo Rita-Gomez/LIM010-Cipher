@@ -22,12 +22,12 @@ aceptar.addEventListener('click', () => {
 
     if (password < 2) {
         if (contra1 === 'LABORATORIA') {
-            vista_1.classList.add('hide');
-            vista_3.classList.remove('hide');
+        vista_1.classList.add('hide');
+        vista_3.classList.remove('hide');
         }
         else {
-            document.getElementById('error').innerHTML = 'Contraseña incorrecta'
-            password++;
+        document.getElementById('error').innerHTML = 'Contraseña incorrecta'
+        password++;
         }
     } else {
         vista_1.classList.add('hide');

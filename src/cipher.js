@@ -14,7 +14,7 @@ window.cipher = {
         }
         //Cifrado de minúsculas
         else if (text_cifrar.charCodeAt(i) >= 97 && text_cifrar.charCodeAt(i) <= 122) {
-           text_ready = (text_cifrar.charCodeAt(i) - 97 + parseInt(number_cifrar)+26) % 26 + 97;
+          text_ready = (text_cifrar.charCodeAt(i) - 97 + parseInt(number_cifrar) + 26) % 26 + 97;
           mensajecifrado1 += String.fromCharCode(text_ready);
         } else {
           mensajecifrado1 += letrasCifrado;
@@ -34,7 +34,7 @@ window.cipher = {
       if (letrasDescifrado.match(/[a-z ]/i)) {
         //Descifrado de mayúsculas
         if (text_descifrar.charCodeAt(i) >= 65 && text_descifrar.charCodeAt(i) <= 90) {
-         let text_ready = (text_descifrar.charCodeAt(i) + 65 - parseInt(number_descifrar)) % 26 + 65;
+          let text_ready = (text_descifrar.charCodeAt(i) + 65 - parseInt(number_descifrar)) % 26 + 65;
           mensajedescifrado1 += String.fromCharCode(text_ready);
         }
         //Descifrado de minúsculas

@@ -12,9 +12,10 @@
 </head>
 
 <body>
+  <header>
+  </header>
   <main>
-    <header></header>
-    <div id="vista1">
+    <section id="vista1">
       <h1>SECRET DATA.</h1>
       <p id="data">Sabemos que la confidencialidad es importante, es por eso que esta página web es perfecta para ti.
         Al modificar información solo se sabrá su significado al tener la contraseña correcta.</p>
@@ -22,15 +23,14 @@
       <input type="password" id="password1" class="input1">
       <button type="submit" id="aceptar1">Ingresar</button>
       <h4 id="error"></h4>
-    </div>
-    <div id="vista2" class="hide">
+    </section>
+    <section id="vista2" class="hide">
       <h1 id="titulo">SECRET DATA.</h1>
       <p id="data_1">Sabemos que la confidencialidad es importante, es por eso que esta página web es perfecta para ti.
         Al modificar información solo se sabrá su significado al tener la contraseña correcta.</p>
       <h4>Lo sentimos, ha superado el número de intentos :(</h4>
-    </div>
-
-    <div id="vista3" class="hide">
+    </section>
+    <section id="vista3" class="hide">
       <h1>Ingrese el texto</h1>
       <input type="text" id="text_cifrar" class="input1" placeholder="Cifrar texto">
       <input type="text" id="text_descifrar" class="input1" placeholder="Descifrar texto">
@@ -40,30 +40,26 @@
 
       <button class="cifrar1 button-cipher" type="submit" value="cifrado" id="cifrar">CIFRAR</button>
       <button class="descifrar1 button-cipher" type="submit" value="descifrado" id="descifrar">DESCIFRAR</button>
-
-    </div>
-    <div id="vista4" class="hide">
+    </section>
+    <section id="vista4" class="hide">
       <h2>Tu texto ha sido cifrado con éxito</h2>
       <h4 id="cifrar_1"></h4>
 
       <button type="button" id="back1">Ingresar un nuevo texto</button>
-    </div>
-    <div id="vista5" class="hide">
+    </section>
+    <section id="vista5" class="hide">
       <h2>Tu texto ha sido descifrado con éxito</h2>
       <h4 id="descifrar_1"></h4>
-
       <button type="button" id="back2">Ingresar un nuevo texto</button>
-    </div>
-    <script src="index.js"></script>
-    <script src="cipher.js"></script>
-    <footer>
-      <div class="container-footer">
-        © 2019 Todos los Derechos Reservados | <a href="">Rita Gómez H.</a>
-      </div>
-
-    </footer>
-
+    </section>
   </main>
+  <footer>
+    <section class="container-footer">
+      © 2019 Todos los Derechos Reservados | <a href="">Rita Gómez H.</a>
+    </section>
+  </footer>
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
 </body>
 
 </html>
