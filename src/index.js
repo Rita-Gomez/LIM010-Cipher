@@ -1,6 +1,6 @@
 /* Acá va tu código */
 let intentos = 0;
-const mensaje = ['incorrecta', 'erronea', 'equivocada. Vuelve a intentarlo'];
+const mensaje = ['incorrecta', 'equivocada', 'erronea. Vuelve a intentarlo'];
 const element = document.getElementById("btn1");
 element.addEventListener("click", () =>{
     const pass1 = document.getElementById('pass1').value;
@@ -13,14 +13,14 @@ element.addEventListener("click", () =>{
         document.getElementById('page2').classList.remove('hide');
     } else {
       let info = document.getElementById("texto");
-      info.innerHTML = `Contraseñ@ ${mensaje[0]}`;
+      info.innerHTML = `Contraseñ@ ${mensaje[0]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
       intentos = intentos + 1;
       if (intentos == 1) {
         let info = document.getElementById("texto");
-        info.innerHTML = `Contraseñ@ ${mensaje[1]}`;
+        info.innerHTML = `Contraseñ@ ${mensaje[1]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
       } if (intentos == 2) {
         let info = document.getElementById("texto");
-        info.innerHTML = `Contraseñ@ ${mensaje[2]}`;
+        info.innerHTML = `Contraseñ@ ${mensaje[2]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
       }
     }
 });

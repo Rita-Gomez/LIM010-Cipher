@@ -29,6 +29,10 @@ body{
   font-size: 30px;
   text-align: center;
   text-decoration: none;
+  font-family: 'Alegreya',
+  serif;
+  font-family: 'Cardo',
+  serif;
 }
 #page1 {
    width: 320px;
@@ -39,7 +43,7 @@ body{
    position: relative;
    margin-top: 5%;
    padding: 15px;
-   margin-bottom: calc(8.5% - 56.5px);
+   margin-bottom: calc(8.5% - 58.5px);
 }
 #page2 {
   width: 320px;
@@ -49,15 +53,33 @@ body{
   left: 37%;
   position: relative;
   padding: 15px;
-  margin-bottom: calc(6.5% - 36.5px);
+  margin-bottom: calc(6.5% - 43.5px);
 }
 .titulo{
   text-align: center;
   margin-top: 93px;
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
 }
 .titulo1 {
   text-align: center;
   margin-top: 27px;
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
+}
+p{
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
+  font-family: 'Cardo',
+  serif;
+  font-family: 'Kalam',
+  cursive;
 }
 #texto{
   margin-left: calc(-28% - 11px);
@@ -109,6 +131,16 @@ body{
   border-radius: 20px;
   margin-top: 20%;
   margin-left: 10%;
+  font-family: 'Fredoka One',
+  cursive;
+  font-family: 'Alegreya',
+  serif;
+  font-family: 'Cardo',
+  serif;
+  font-family: 'Kalam',
+  cursive;
+  font-family: 'Acme',
+  sans-serif;
   cursor: pointer;
 }
 #btn1:hover{
@@ -161,6 +193,12 @@ body{
   margin-left: 18%;
   cursor: pointer;
 }
+#btn4:hover {
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
+}
 #btn5{
   border: none;
   outline: none;
@@ -173,6 +211,12 @@ body{
   margin-top: 5%;
   margin-left: 18%;
   cursor: pointer;
+}
+#btn5:hover {
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
 }
 .page1 input[type = "text"],
 .page1 input[type = "password"]{
