@@ -12,17 +12,23 @@ element.addEventListener("click", () =>{
         document.getElementById('dato').classList.remove('hide');
         document.getElementById('page2').classList.remove('hide');
     } else {
-      let info = document.getElementById("texto");
-      info.innerHTML = `Contraseñ@ ${mensaje[0]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
+      let info1 = document.getElementById("texto");
+      info1.innerHTML = `Contraseñ@ ${mensaje[0]} <i class="fa fa-exclamation-triangle" style="color: #8c230f"></i>`;
       intentos = intentos + 1;
       if (intentos == 1) {
-        let info = document.getElementById("texto");
-        info.innerHTML = `Contraseñ@ ${mensaje[1]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
+        let info2 = document.getElementById("texto");
+        info2.innerHTML = `Contraseñ@ ${mensaje[1]} <i class="fa fa-exclamation-triangle" style="color: #8c230f"></i>`;
       } if (intentos == 2) {
-        let info = document.getElementById("texto");
-        info.innerHTML = `Contraseñ@ ${mensaje[2]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
+        let info3 = document.getElementById("texto");
+        info3.innerHTML = `Contraseñ@ ${mensaje[2]} <i class="fa fa-exclamation-triangle" style="color: #8c230f"></i>`;
+      } else if (intentos == 3) {
+          let info5 = document.getElementById("pass1").disabled = "true";
+          info5.innerHTML = ``;
+          document.getElementById('container_modal').classList.remove('hide');
+          let info6 = document.getElementById("name").disabled = "true";
+          info6.innerHTML = ``;
       }
-    }
+      }
 });
 
 /*Funcionalidad del cifrado*/

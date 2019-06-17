@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kreon&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="image/descarga.png">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1 id="dato" class="hide">Texto</h1>
-    </header>
-    <main>
-      <div id="page1" class="page1">
-        <img src="image/avatar.jpg" class="avatar" alt="avatar">
-        <h1 class="titulo">Movie Login</h1>
-        <div class="form">
-          <p>Ingresar su usuario :</p>
-          <input type="text" id="name" placeholder="Enter Username">
-          <p>Ingresar su contraseña :</p>
-          <input type="password" id="pass1" placeholder="Enter Password">
-          <button id="btn1">INGRESAR</button>
-          <p id="texto"></p>
-        </div>
-      </div>
 
-      <div id="page2" class="hide">
-        <h1 class="titulo1">For Spoilers</h1>
-        <div class="form1">
-          <p>Comentar Película:</p>
-          <textarea name="comenta" id="comenta" cols="22" rows="1" placeholder="Escribe tu comentario"></textarea>
-          <div class="columna columna-2 mostrar-izquierda">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kreon&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="image/descarga.png">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="dato" class="hide">Texto</h1>
+  </header>
+  <main>
+    <div id="page1" class="page1">
+      <img src="image/avatar.jpg" class="avatar" alt="avatar">
+      <h1 class="titulo">Movie Login</h1>
+      <div class="form">
+        <p>Ingresar su usuario :</p>
+        <input type="text" id="name" placeholder="Enter Username">
+        <p>Ingresar su contraseña :</p>
+        <input type="password" id="pass1" placeholder="Enter Password">
+        <button type="submit" id="btn1">INGRESAR</button>
+        <p id="texto"></p>
+      </div>
+    </div>
+    <div id="container_modal" class="hide">
+        <h3 class="modal">Bloqueado entra dentro de 1 hora <i class="fa fa-bell-slash"></i></h3>
+    </div>
+
+    <div id="page2" class="hide">
+      <h1 class="titulo1">For Spoilers</h1>
+      <div class="form1">
+        <p>Comentar Película:</p>
+        <textarea name="comenta" id="comenta" cols="22" rows="1" placeholder="Escribe tu comentario"></textarea>
+        <div class="columna columna-2 mostrar-izquierda">
           <p class="mes">Mes de estreno:</p>
           <input type="number" id="number" placeholder="n° del mes">
-          </div>
-          <div class="columna columna-2 mostrar-derecha">
-            <button id="btn2"><i class="fa fa-lock"></i></button>
-            <button id="btn3"><i class="fa fa-unlock"></i></button>
-          </div>
-          <textarea name="resultado" id="resultado" cols="22" rows="1" placeholder="Mostrar el resultado"></textarea>
-          <div class="botones1">
-            <button id="btn4"><i class="fa fa-trash"></i></button>
-            <button id="btn5"><i class="fa fa-home"></i></button>
-          </div>
+        </div>
+        <div class="columna columna-2 mostrar-derecha">
+          <button id="btn2"><i class="fa fa-lock"></i></button>
+          <button id="btn3"><i class="fa fa-unlock"></i></button>
+        </div>
+        <textarea name="resultado" id="resultado" cols="22" rows="1" placeholder="Mostrar el resultado"></textarea>
+        <div class="botones1">
+          <button id="btn4"><i class="fa fa-trash"></i></button>
+          <button id="btn5"><i class="fa fa-home"></i></button>
         </div>
       </div>
-    </main>
-    <footer>
-      <h3>Copyright ©-2019 all right reserved. Developed by Andrea Moscoso.</h3>
-    </footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <h3>Copyright ©-2019 all right reserved. Developed by Andrea Moscoso.</h3>
+  </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
-
-
