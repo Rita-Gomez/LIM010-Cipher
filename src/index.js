@@ -18,24 +18,23 @@ const vista_5 = document.getElementById('vista5')
 let password = 0;
 //Funcion Botones
 aceptar.addEventListener('click', () => {
-    const contra1 = contra.value;
+const contra1 = contra.value;
 
-    if (password < 2) {
-        if (contra1 === 'LABORATORIA') {
-        vista_1.classList.add('hide');
-        vista_3.classList.remove('hide');
-        }
-        else {
-        document.getElementById('error').innerHTML = 'Contraseña incorrecta'
-        password++;
-        }
+if (password < 2) {
+    if (contra1 === 'L') {
+    vista_1.classList.add('hide');
+    vista_3.classList.remove('hide');
+    }
+    else {
+    document.getElementById('error').innerHTML = 'Contraseña incorrecta'
+    password++;
+    }
     } else {
-        vista_1.classList.add('hide');
-        vista_2.classList.remove('hide');
-
+    vista_1.classList.add('hide');
+    vista_2.classList.remove('hide');
     }
 });
-cifrar.addEventListener('click', () => {
+cifrar.addEventListener('click',() =>{
     let text_cifrar = texto_cifrar.value;
     let number_cifrar = numeros.value;
     vista_3.classList.add('hide');
@@ -57,7 +56,8 @@ back_one.addEventListener('click', () => {
     vista_4.classList.add('hide');
     vista_3.classList.remove('hide');
 });
-back_two.addEventListener('click', () => {
+back_two.addEventListener('click', (event) => {
+    event.preventDefault();
     vista_5.classList.add('hide');
     vista_3.classList.remove('hide');
 });
