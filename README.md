@@ -4,7 +4,7 @@
 
 -Es importante la confidencialidad de los resultados médicos, ya que hay muchos casos en los que se ha entregado al paciente un resultado no perteneciente. Es por eso que esta página ha sido creada.
 
-##   Research UX
+##Research UX
 
 °  Usuarios:  Personal médico/enfermerxs y los principales usuarios (pacientes)
 -°Objetivos: Enfatizar la privacidad de resultados médicos a los usuarios/pacientes.
@@ -20,14 +20,17 @@ En las entrevistas previas mis entrevistados fueron dos personas un doctor y un 
 
 ### Imágenes del prototipo en Balsamiq.
 
-<img src= "./src/Balsamiq/Balsamiq 1.jpg">
-<img src= "./src/Balsamiq/Balsamiq 3.jpg">
-<img src= "./src/Balsamiq/Balsamiq 4.jpg">
+<img src= "./src/Balsamiq/b1.jpg">
+<img src= "./src/Balsamiq/b2.jpg">
+<img src= "./src/Balsamiq/b3.jpg">
 
 
 -Feedback 2: Al presentar el primer avance terminado a compañeras dieron comentarios en cambios de color y tamaño de fuentes (letras) como también de estilo de fuente.
 
 -Después de tomar en cuenta el feedback de mis compañeras, hice cambios en CSS, tanto para el color de textos y botones, y por último, el fondo de la página.
+
+-Feedback 3: Quise tomar en cuenta las opiniones de otras personas fuera de mi entorno y algo que fue muy común fue el de implementar un botón que limpie la pantalla para que borre lo que ya había escrito.
+
+-Fue por eso que implementé un botón con las función reset dentro de mi form.
  
-## Imagen final de mi vista principal.
 <img src="./src/Balsamiq/final1.jpg">

@@ -5,7 +5,7 @@ window.cipher = {
     let text_ready;
     for (let i = 0; i < text_cifrar.length; i++) {
       let letrasCifrado = text_cifrar[i];
-      //Validación de espacios
+      //Validación de espacios y coincidencia de letras
       if (letrasCifrado.match(/[a-z ]/i)) {
         //Cifrado de mayúsculas
         if (text_cifrar.charCodeAt(i) >= 65 && text_cifrar.charCodeAt(i) <= 90) {
@@ -22,7 +22,6 @@ window.cipher = {
       }
     }
     return mensajecifrado1;
-
   },
   decode: (text_descifrar, number_descifrar) => {
     //mensaje recibido 2
