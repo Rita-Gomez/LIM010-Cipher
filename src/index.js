@@ -1,34 +1,51 @@
 /* Acá va tu código */
 let intentos = 0;
 const mensaje = ['incorrecta', 'equivocada', 'erronea. Vuelve a intentarlo'];
+let password = document.getElementById("pass1");
+password.addEventListener("keyup",(e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    document.getElementById("btn1").click();
+  }
+});
 const element = document.getElementById("btn1");
 element.addEventListener("click", () =>{
     const pass1 = document.getElementById('pass1').value;
     const nameUser = document.getElementById('name').value.toUpperCase();
     if (pass1 == 'LABORATORIA') {
       let info = document.getElementById("dato");
-      info.innerHTML = `BIENVENIDA  ${nameUser}`;
+      info.innerHTML = `MOVIE VIEW :  ${nameUser}`;
         document.getElementById('page1').classList.add('hide');
         document.getElementById('dato').classList.remove('hide');
         document.getElementById('page2').classList.remove('hide');
+        document.getElementById('black').classList.add('hide');
+        document.getElementById('refresh').classList.add('hide');
     } else {
-      let info1 = document.getElementById("texto");
-      info1.innerHTML = `Contraseñ@ ${mensaje[0]} <i class="fa fa-exclamation-triangle" style="color: #8c230f"></i>`;
+      let info = document.getElementById("texto");
+      info.innerHTML = `Contraseñ@ ${mensaje[0]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
       intentos = intentos + 1;
       if (intentos == 1) {
-        let info2 = document.getElementById("texto");
-        info2.innerHTML = `Contraseñ@ ${mensaje[1]} <i class="fa fa-exclamation-triangle" style="color: #8c230f"></i>`;
+        let info = document.getElementById("texto");
+        info.innerHTML = `Contraseñ@ ${mensaje[1]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
       } if (intentos == 2) {
-        let info3 = document.getElementById("texto");
-        info3.innerHTML = `Contraseñ@ ${mensaje[2]} <i class="fa fa-exclamation-triangle" style="color: #8c230f"></i>`;
-      } else if (intentos == 3) {
-          let info5 = document.getElementById("pass1").disabled = "true";
-          info5.innerHTML = ``;
-          document.getElementById('container_modal').classList.remove('hide');
-          let info6 = document.getElementById("name").disabled = "true";
-          info6.innerHTML = ``;
+        let info = document.getElementById("texto");
+        info.innerHTML = `Contraseñ@ ${mensaje[2]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
+      } else if (intentos == 4){
+        document.getElementById("pass1").disabled = true;
+        document.getElementById("name").disabled = true;
+        document.getElementById("btn1").disabled = true;
+        info.innerHTML = ``;
+        document.getElementById('black').classList.add('overlay');
+        document.getElementById('black').classList.remove('hide');
+        document.getElementById('refresh').classList.add('btn6');
+        document.getElementById('refresh').classList.remove('hide');
       }
-      }
+    }
+});
+/*Actualizar página*/
+const btn6 = document.getElementById('btn6');
+btn6.addEventListener('click', () => {
+  location.reload();
 });
 
 /*Funcionalidad del cifrado*/

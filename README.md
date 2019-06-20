@@ -12,6 +12,7 @@
   - [Colocación del primer prototipo en papel](#colocacion-del-primer-prototipo-en-papel)
   - [Resumen del feedback](#resumen-del-feedback)
   - [Imagen final en Balsamiq Mockup](#imagen-final-en-balsamiq-mockup)
+  - [Feedback Final](#feedback-final)
 
 
 ## Resumen del proyecto
@@ -51,3 +52,7 @@ generando en pantallas diferentes.
 ### Imagen final en Balsamiq Mockup
 ![pantalla2](image-prototipo/screen1.png)
 ![pantalla3](image-prototipo/screen2.png)
+
+### Feedback Final
+![pantallaFeedbak2](image-prototipo/pantallaFeedbak2.jpg)
+- En el feedback las mejoras que realicé en prototipo de papel es muy diferente a lo que se generó ahora, pues en una pantalla muestra los botones de cifrar, limpiar y descifrar, en un solo bloque en horizontal, lo mismo para el botón regresar y el botón enviar, realizé un cambio del background de la pantalla agregé el botón enviar, ya no como muestro en la figura anterior.
