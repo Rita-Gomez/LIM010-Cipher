@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Fredoka+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Cardo|Fredoka+One|Kalam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Alegreya|Cardo|Fredoka+One|Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="image/descarga.png">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
@@ -16,41 +21,64 @@
     </header>
     <main>
       <div id="page1" class="page1">
-        <img src="image/avatar.jpg" class="avatar">
-        <h1 class="titulo">Movie Login</h1>
+        <img src="image/avatar.jpg" class="avatar" alt="avatar">
+        <h2 class="titulo">Movie Login</h2>
         <div class="form">
-          <p>Ingresar su usuario :</p>
+          <label for="namemovie"><span>Ingresar su película :</span></label>
           <input type="text" id="name" placeholder="Enter Username">
-          <p>Ingresar su contraseña :</p>
+          <label for="namepass"><p>Ingresar su contraseña :</p></label>
           <input type="password" id="pass1" placeholder="Enter Password">
-          <button id="btn1">INGRESAR</button>
+          <input type="submit" id="btn1" name="submit" value="INGRESAR">
           <p id="texto"></p>
         </div>
       </div>
+      <div id="refresh" class="hide">
+        <button id="btn6"><i class="fa fa-redo"></i></button>
+      </div>
+      <div id="black" class="hide">
+        <div class="overlay">
+        </div>
+      </div>
+
 
       <div id="page2" class="hide">
-        <h1 class="titulo1">For Spoilers</h1>
+        <h3 class="titulo1">For Spoilers</h3>
         <div class="form1">
-          <p>Comentar Película:</p>
-          <textarea name="comenta" id="comenta" cols="22" rows="0" placeholder="Escribe tu comentario"></textarea>
-          <div class="columna columna-2 mostrar-izquierda">
-          <p class="mes">Mes de estreno:</p>
-          <input type="number" id="number" placeholder="n° del mes">
+          <label for="mesestreno"><span>Mes de estreno:</span></label>
+          <!--<input type="number" id="number" placeholder="n° del mes">-->
+          <select name="" id="number">
+            <option value="" disabled selected>Meses</option>
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
+          <label for="mesestreno"><span>Comentar Película:</span></label>
+          <textarea name="comenta" id="comenta" placeholder="Escribe tu comentario"></textarea>
+          <div class="botones">
+            <button id="btn2" title="Cifrar mensaje"><i class="fa fa-lock"></i></button>
+            <button id="btn3" title="Descifrar mensaje"><i class="fa fa-unlock"></i></button>
+            <button id="btn4" title="Limpiar texto"><i class="fa fa-trash"></i></button>
           </div>
-          <div class="columna columna-2 mostrar-derecha">
-            <button id="btn2"><i class="fa fa-lock"></i></button>
-            <button id="btn3"><i class="fa fa-unlock"></i></button>
-          </div>
-          <textarea name="resultado" id="resultado" cols="22" rows="0" placeholder="Mostrar el resultado"></textarea>
+          <textarea name="resultado" id="resultado" placeholder="Mostrar el resultado"></textarea>
+          <div></div>
           <div class="botones1">
-            <button id="btn4"><i class="fa fa-trash"></i></button>
-            <button id="btn5"><i class="fa fa-home"></i></button>
+            <button id="btn5" title="Regresar al menu principal"><i class="fa fa-home"></i></button>
+            <button id="btn6" title="Enviar mensaje"><a href="mailto:ams_t2@hotmail.com"><i class="fa fa-envelope-open"></i></a></button>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <h3>Copyright ©-2019 all right reserved. Developed by Andrea Moscoso.</h3>
+      <p>Copyright ©-2019 all right reserved. Developed by Andrea Moscoso.</p>
     </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

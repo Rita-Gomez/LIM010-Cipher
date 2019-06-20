@@ -1,14 +1,14 @@
 /* Acá van tus reglas de estilo */
 body{
-  overflow: hidden;
-  margin: 0 auto;
-  height: 768px;
-  padding: 0;
-  font-family: sans-serif;
-  background: url(image/fondo\ 35.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: animate 2s infinite .2s ease-in-out;
+   font-family: sans-serif;
+   margin: 0 auto;
+   padding: 0;
+   overflow: hidden;
+   height: 768px;
+   background: url(image/fondo\ 35.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   animation: animate 2s infinite .2s ease-in-out;
 }
 @-webkit-keyframes animate{
   from {
@@ -23,6 +23,11 @@ body{
   } to {
     background-position: 100% 0;
   }
+}
+.image123{
+  background: url(image/fondo34.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #dato{
   color: white;
@@ -66,12 +71,17 @@ body{
 .titulo1 {
   text-align: center;
   margin-top: 27px;
+  font-size: 25px;
   font-family: 'Fredoka One',
   cursive;
   font-family: 'Alegreya',
   serif;
 }
-p{
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+span{
   font-family: 'Fredoka One',
   cursive;
   font-family: 'Alegreya',
@@ -87,10 +97,8 @@ p{
   max-width: 318px;
   text-align: center;
 }
-.mes{
-  width: 115px;
-}
-.form {
+
+.form{
   width: 268px;
   height: 356px;
   top: 19%;
@@ -111,6 +119,15 @@ p{
 .hide{
   display: none;
 }
+.overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: .25;
+}
 .avatar{
   width: 100px;
   height: 100px;
@@ -129,7 +146,7 @@ p{
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-  margin-top: 20%;
+  margin-top: 16%;
   margin-left: 10%;
   font-family: 'Fredoka One',
   cursive;
@@ -150,47 +167,60 @@ p{
   transition: all 0.3s ease-in;
 }
 .botones{
-  display: flex;
+  display: block;
   margin-bottom: 25px;
 }
 .botones1{
-  display: flex;
-    margin-left: calc(0% - 44px);
+  display: block;
+  margin-top: 5%;
 }
 #btn2{
   border: none;
   outline: none;
+  height: 40px;
   width: 40px;
-  padding: 7px;
   background: #8c230f;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
+  margin-left: 8%;
   cursor: pointer;
+}
+#btn2:hover {
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
 }
 #btn3{
   border: none;
   outline: none;
+  height: 40px;
   width: 40px;
-  padding: 7px;
   background: #8c230f;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-  margin-top: 15%;
   cursor: pointer;
+  margin-left: 8%;
+  margin-top: 15%;
+}
+#btn3:hover {
+  background: transparent;
+  color: #8c230f;
+  border: 1px solid #8c230f;
+  transition: all 0.3s ease-in;
 }
 #btn4{
   border: none;
   outline: none;
   height: 40px;
-  width: 130px;
+  width: 40px;
   background: #8c230f;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-  margin-top: 5%;
-  margin-left: 18%;
+  margin-left: 8%;
   cursor: pointer;
 }
 #btn4:hover {
@@ -203,13 +233,12 @@ p{
   border: none;
   outline: none;
   height: 40px;
-  width: 130px;
+  width: 40px;
   background: #8c230f;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-  margin-top: 5%;
-  margin-left: 18%;
+  margin-left: 26%;
   cursor: pointer;
 }
 #btn5:hover {
@@ -217,6 +246,37 @@ p{
   color: #8c230f;
   border: 1px solid #8c230f;
   transition: all 0.3s ease-in;
+}
+#btn6 {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 40px;
+  background:  #8c230f;
+  color: #fff;
+  border: 1px solid #8c230f;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 4;
+  position: absolute;
+  margin-left: 20px;
+}
+#btn6:hover {
+  background: transparent;
+  color: #8c230f;
+  transition: all 0.3s ease-in;
+}
+a{
+  color: #fff;
+}
+a:hover{
+  color: #8c230f;
+}
+#refresh{
+  position: relative;
+  bottom: 558.5px;
+  left: 795px;
 }
 .page1 input[type = "text"],
 .page1 input[type = "password"]{
@@ -227,33 +287,21 @@ p{
   height: 40px;
   color: #fff;
   font-size: 16px;
+  margin-bottom: 8%;
 }
 #number{
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
   outline: none;
-  width: 100px;
-  margin-top: 20%;
+  width: 89px;
+  margin-top: calc(-12%);
   color: #fff;
-  font-size: 16px;
-}
-.columna{
-  float: left;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-}
-.columna-2{
-  width: 50%;
-}
-.mostrar-izquierda{
-  right: 7%;
-}
-.mostrar-derecha {
-  left: 70%;
-  margin-top: calc(-38%);
-  display: inline-grid;
+  margin-left: 39%;
+  font-size: 14px;
+  font-family: 'Kalam',
+  cursive;
+  position: absolute;
 }
 #comenta,
 #resultado{
@@ -267,6 +315,13 @@ p{
   resize: none;
   margin-top: 7%;
   font-size: 16px;
+}
+select {
+  color:blue;
+}
+option {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 footer{
  background: rgba(0, 0, 0, 0.5);
