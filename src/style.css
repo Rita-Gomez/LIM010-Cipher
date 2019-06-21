@@ -1,7 +1,8 @@
 /* Acá van tus reglas de estilo */
 body{
    font-family: sans-serif;
-   margin: 0 auto;
+   background-color:#212120;
+   /*margin: 0 auto;
    padding: 0;
    overflow: hidden;
    height: 768px;
@@ -9,6 +10,7 @@ body{
    background-size: cover;
    background-repeat: no-repeat;
    animation: animate 2s infinite .2s ease-in-out;
+   */
 }
 @-webkit-keyframes animate{
   from {
@@ -24,10 +26,25 @@ body{
     background-position: 100% 0;
   }
 }
-.image123{
+#image123{
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  height: 643px;
   background: url(image/fondo34.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  animation: animate 2s infinite .2s ease-in-out;
+}
+#image456 {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  height: 643px;
+  background: url(image/fondo\ 35.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: animate 2s infinite .2s ease-in-out;
 }
 #dato{
   color: white;
@@ -275,8 +292,8 @@ a:hover{
 }
 #refresh{
   position: relative;
-  bottom: 558.5px;
-  left: 795px;
+  top: 67px;
+  left: 750px;
 }
 .page1 input[type = "text"],
 .page1 input[type = "password"]{
@@ -324,11 +341,12 @@ option {
   background-color: rgba(0, 0, 0, 0.5);
 }
 footer{
- background: rgba(0, 0, 0, 0.5);
  font-weight: 900;
  color:#fff;
  text-align: center;
  font-size: 12px;
  max-width: 100%;
- margin: 0 auto;
+ position: absolute;
+ margin-top: calc(-3%);
+ margin-left: 32%;
 }

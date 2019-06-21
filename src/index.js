@@ -20,6 +20,8 @@ element.addEventListener("click", () =>{
         document.getElementById('page2').classList.remove('hide');
         document.getElementById('black').classList.add('hide');
         document.getElementById('refresh').classList.add('hide');
+        document.getElementById('image456').classList.add('hide');
+        document.getElementById('image123').classList.remove('hide');
     } else {
       let info = document.getElementById("texto");
       info.innerHTML = `Contraseñ@ ${mensaje[0]} <i class="fa fa-exclamation-circle" style="color: #8c230f"></i>`;
@@ -38,7 +40,7 @@ element.addEventListener("click", () =>{
         document.getElementById('black').classList.add('overlay');
         document.getElementById('black').classList.remove('hide');
         document.getElementById('refresh').classList.add('btn6');
-        document.getElementById('refresh').classList.remove('hide');
+        document.getElementById('refresh').classList.add('hide');
       }
     }
 });
@@ -72,6 +74,8 @@ btnRegresar.addEventListener("click", () => {
   document.getElementById("pass1").value = "";
   document.getElementById("name").value = "";
   document.getElementById('page1').classList.remove('hide');
+  document.getElementById('image456').classList.remove('hide');
+  document.getElementById('image123').classList.add('hide');
 });
 
 /*limpiando los valores ingresados y mostrados*/

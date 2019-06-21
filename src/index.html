@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="image/descarga.png">
@@ -16,72 +16,73 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1 id="dato" class="hide"></h1>
-    </header>
+    <header></header>
     <main>
-      <div id="page1" class="page1">
-        <img src="image/avatar.jpg" class="avatar" alt="avatar">
-        <h2 class="titulo">Movie Login</h2>
-        <div class="form">
-          <label for="namemovie"><span>Ingresar su película :</span></label>
-          <input type="text" id="name" placeholder="Enter Username">
-          <label for="namepass"><p>Ingresar su contraseña :</p></label>
-          <input type="password" id="pass1" placeholder="Enter Password">
-          <input type="submit" id="btn1" name="submit" value="INGRESAR">
-          <p id="texto"></p>
-        </div>
-      </div>
-      <div id="refresh" class="hide">
-        <button id="btn6"><i class="fa fa-redo"></i></button>
-      </div>
-      <div id="black" class="hide">
-        <div class="overlay">
-        </div>
-      </div>
-
-
-      <div id="page2" class="hide">
-        <h3 class="titulo1">For Spoilers</h3>
-        <div class="form1">
-          <label for="mesestreno"><span>Mes de estreno:</span></label>
-          <!--<input type="number" id="number" placeholder="n° del mes">-->
-          <select name="" id="number">
-            <option value="" disabled selected>Meses</option>
-            <option value="1">Enero</option>
-            <option value="2">Febrero</option>
-            <option value="3">Marzo</option>
-            <option value="4">Abril</option>
-            <option value="5">Mayo</option>
-            <option value="6">Junio</option>
-            <option value="7">Julio</option>
-            <option value="8">Agosto</option>
-            <option value="9">Setiembre</option>
-            <option value="10">Octubre</option>
-            <option value="11">Noviembre</option>
-            <option value="12">Diciembre</option>
-          </select>
-          <label for="mesestreno"><span>Comentar Película:</span></label>
-          <textarea name="comenta" id="comenta" placeholder="Escribe tu comentario"></textarea>
-          <div class="botones">
-            <button id="btn2" title="Cifrar mensaje"><i class="fa fa-lock"></i></button>
-            <button id="btn3" title="Descifrar mensaje"><i class="fa fa-unlock"></i></button>
-            <button id="btn4" title="Limpiar texto"><i class="fa fa-trash"></i></button>
+      <div id="image456">
+        <div id="page1" class="page1">
+          <img src="image/avatar.jpg" class="avatar" alt="avatar">
+          <h2 class="titulo">Movie Login</h2>
+          <div class="form">
+            <label for="namemovie"><span>Ingresar su película :</span></label>
+            <input type="text" id="name" placeholder="Enter Username">
+            <label for="namepass"><p>Ingresar su contraseña :</p></label>
+            <input type="password" id="pass1" placeholder="Enter Password">
+            <input type="submit" id="btn1" name="submit" value="INGRESAR">
+            <p id="texto"></p>
           </div>
-          <textarea name="resultado" id="resultado" placeholder="Mostrar el resultado"></textarea>
-          <div></div>
-          <div class="botones1">
-            <button id="btn5" title="Regresar al menu principal"><i class="fa fa-home"></i></button>
-            <button id="btn6" title="Enviar mensaje"><a href="mailto:ams_t2@hotmail.com"><i class="fa fa-envelope-open"></i></a></button>
+        </div>
+        <div id="refresh" class="hide">
+          <button id="btn6"><i class="fa fa-redo"></i></button>
+        </div>
+        <div id="black" class="hide">
+          <div class="overlay">
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <p>Copyright ©-2019 all right reserved. Developed by Andrea Moscoso.</p>
-    </footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+
+      <div id="image123" class="hide">
+        <h1 id="dato" class="hide"></h1>
+        <div id="page2" class="hide">
+          <h3 class="titulo1">For Spoilers</h3>
+          <div class="form1">
+            <label for="mesestreno"><span>Mes de estreno:</span></label>
+            <!--<input type="number" id="number" placeholder="n° del mes">-->
+            <select name="" id="number">
+              <option value="" disabled selected>Meses</option>
+              <option value="1">Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Setiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
+            </select>
+            <label for="mesestreno"><span>Comentar Película:</span></label>
+            <textarea name="comenta" id="comenta" placeholder="Escribe tu comentario"></textarea>
+            <div class="botones">
+              <button id="btn2" title="Cifrar mensaje"><i class="fa fa-lock"></i></button>
+              <button id="btn3" title="Descifrar mensaje"><i class="fa fa-unlock"></i></button>
+              <button id="btn4" title="Limpiar texto"><i class="fa fa-trash"></i></button>
+            </div>
+            <textarea name="resultado" id="resultado" placeholder="Mostrar el resultado"></textarea>
+            <div class="botones1">
+              <button id="btn5" title="Regresar al menu principal"><i class="fa fa-home"></i></button>
+              <button id="btn6" title="Enviar mensaje"><a href="mailto:ams_t2@hotmail.com"><i class="fa fa-envelope-open"></i></a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <p>Copyright ©-2019 all right reserved. Developed by Andrea Moscoso.</p>
+  </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
   </body>
 </html>
 
