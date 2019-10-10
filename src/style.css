@@ -1,72 +1,70 @@
 /* Acá van tus reglas de estilo */
-body{
-   font-family: sans-serif;
-   background-color:#212120;
-   /*margin: 0 auto;
-   padding: 0;
-   overflow: hidden;
-   height: 768px;
-   background: url(image/fondo\ 35.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   animation: animate 2s infinite .2s ease-in-out;
-   */
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
 }
-@-webkit-keyframes animate{
+
+@-webkit-keyframes animate {
   from {
     background-position: 0 0;
-  } to {
+  }
+
+  to {
     background-position: 100% 0;
   }
 }
-@keyframes animate{
-  from{
+
+@keyframes animate {
+  from {
     background-position: 0 0;
-  } to {
+  }
+
+  to {
     background-position: 100% 0;
   }
 }
-#image123{
-  margin: 0 auto;
-  padding: 0;
+
+#image123 {
   overflow: hidden;
-  height: 643px;
+  height: 656px;
   background: url(image/fondo34.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   animation: animate 2s infinite .2s ease-in-out;
 }
+
 #image456 {
-  margin: 0 auto;
-  padding: 0;
   overflow: hidden;
-  height: 643px;
+  height: 656px;
   background: url(image/fondo\ 35.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   animation: animate 2s infinite .2s ease-in-out;
 }
-#dato{
+
+#dato {
   color: white;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
   font-family: 'Alegreya',
-  serif;
+    serif;
   font-family: 'Cardo',
-  serif;
+    serif;
 }
+
 #page1 {
-   width: 320px;
-   height: 485px;
-   background: rgba(0, 0, 0, 0.5);
-   color: #fff;
-   left: 37%;
-   position: relative;
-   margin-top: 5%;
-   padding: 15px;
-   margin-bottom: calc(8.5% - 58.5px);
+  width: 320px;
+  height: 485px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  left: 37%;
+  position: relative;
+  margin-top: 5%;
+  padding: 15px;
+  margin-bottom: calc(8.5% - 58.5px);
 }
+
 #page2 {
   width: 320px;
   height: 485px;
@@ -77,45 +75,50 @@ body{
   padding: 15px;
   margin-bottom: calc(6.5% - 43.5px);
 }
-.titulo{
+
+.titulo {
   text-align: center;
   margin-top: 93px;
   font-family: 'Fredoka One',
-  cursive;
+    cursive;
   font-family: 'Alegreya',
-  serif;
+    serif;
 }
+
 .titulo1 {
   text-align: center;
   margin-top: 27px;
   font-size: 25px;
   font-family: 'Fredoka One',
-  cursive;
+    cursive;
   font-family: 'Alegreya',
-  serif;
+    serif;
 }
+
 label {
   margin-bottom: 10px;
   display: block;
 }
-span{
+
+span {
   font-family: 'Fredoka One',
-  cursive;
+    cursive;
   font-family: 'Alegreya',
-  serif;
+    serif;
   font-family: 'Cardo',
-  serif;
+    serif;
   font-family: 'Kalam',
-  cursive;
+    cursive;
 }
-#texto{
+
+#texto {
   margin-left: calc(-28% - 11px);
   padding: 16px;
   max-width: 318px;
   text-align: center;
 }
 
-.form{
+.form {
   width: 268px;
   height: 356px;
   top: 19%;
@@ -123,6 +126,7 @@ span{
   position: absolute;
   padding: 70px 40px;
 }
+
 .form1 {
   width: 289px;
   height: 454px;
@@ -133,10 +137,12 @@ span{
   box-sizing: border-box;
   padding: 70px 40px;
 }
-.hide{
+
+.hide {
   display: none;
 }
-.overlay{
+
+.overlay {
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -145,7 +151,8 @@ span{
   z-index: 1;
   opacity: .25;
 }
-.avatar{
+
+.avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -154,7 +161,8 @@ span{
   left: calc(50% - 50px);
   transition: all .3s ease-in;
 }
-#btn1{
+
+#btn1 {
   border: none;
   outline: none;
   height: 40px;
@@ -166,32 +174,36 @@ span{
   margin-top: 16%;
   margin-left: 10%;
   font-family: 'Fredoka One',
-  cursive;
+    cursive;
   font-family: 'Alegreya',
-  serif;
+    serif;
   font-family: 'Cardo',
-  serif;
+    serif;
   font-family: 'Kalam',
-  cursive;
+    cursive;
   font-family: 'Acme',
-  sans-serif;
+    sans-serif;
   cursor: pointer;
 }
-#btn1:hover{
+
+#btn1:hover {
   background: transparent;
   color: #8c230f;
   border: 1px solid #8c230f;
   transition: all 0.3s ease-in;
 }
-.botones{
+
+.botones {
   display: block;
   margin-bottom: 25px;
 }
-.botones1{
+
+.botones1 {
   display: block;
   margin-top: 5%;
 }
-#btn2{
+
+#btn2 {
   border: none;
   outline: none;
   height: 40px;
@@ -203,13 +215,15 @@ span{
   margin-left: 8%;
   cursor: pointer;
 }
+
 #btn2:hover {
   background: transparent;
   color: #8c230f;
   border: 1px solid #8c230f;
   transition: all 0.3s ease-in;
 }
-#btn3{
+
+#btn3 {
   border: none;
   outline: none;
   height: 40px;
@@ -222,13 +236,15 @@ span{
   margin-left: 8%;
   margin-top: 15%;
 }
+
 #btn3:hover {
   background: transparent;
   color: #8c230f;
   border: 1px solid #8c230f;
   transition: all 0.3s ease-in;
 }
-#btn4{
+
+#btn4 {
   border: none;
   outline: none;
   height: 40px;
@@ -240,13 +256,15 @@ span{
   margin-left: 8%;
   cursor: pointer;
 }
+
 #btn4:hover {
   background: transparent;
   color: #8c230f;
   border: 1px solid #8c230f;
   transition: all 0.3s ease-in;
 }
-#btn5{
+
+#btn5 {
   border: none;
   outline: none;
   height: 40px;
@@ -258,18 +276,20 @@ span{
   margin-left: 26%;
   cursor: pointer;
 }
+
 #btn5:hover {
   background: transparent;
   color: #8c230f;
   border: 1px solid #8c230f;
   transition: all 0.3s ease-in;
 }
-#btn6 {
+
+#btn7 {
   border: none;
   outline: none;
   height: 40px;
   width: 40px;
-  background:  #8c230f;
+  background: #8c230f;
   color: #fff;
   border: 1px solid #8c230f;
   font-size: 18px;
@@ -279,24 +299,29 @@ span{
   position: absolute;
   margin-left: 20px;
 }
-#btn6:hover {
+
+#btn7:hover {
   background: transparent;
   color: #8c230f;
   transition: all 0.3s ease-in;
 }
-a{
+
+a {
   color: #fff;
 }
-a:hover{
+
+a:hover {
   color: #8c230f;
 }
-#refresh{
+
+#refresh {
   position: relative;
   top: 67px;
   left: 750px;
 }
-.page1 input[type = "text"],
-.page1 input[type = "password"]{
+
+.page1 input[type="text"],
+.page1 input[type="password"] {
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
@@ -306,7 +331,8 @@ a:hover{
   font-size: 16px;
   margin-bottom: 8%;
 }
-#number{
+
+#number {
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
@@ -317,11 +343,12 @@ a:hover{
   margin-left: 39%;
   font-size: 14px;
   font-family: 'Kalam',
-  cursive;
+    cursive;
   position: absolute;
 }
+
 #comenta,
-#resultado{
+#resultado {
   width: 197px;
   height: 63px;
   border: none;
@@ -333,20 +360,132 @@ a:hover{
   margin-top: 7%;
   font-size: 16px;
 }
+
 select {
-  color:blue;
+  color: blue;
 }
+
 option {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
 }
-footer{
- font-weight: 900;
- color:#fff;
- text-align: center;
- font-size: 12px;
- max-width: 100%;
- position: absolute;
- margin-top: calc(-3%);
- margin-left: 32%;
+
+footer {
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  max-width: 100%;
+  position: absolute;
+  margin-top: calc(-3%);
+  margin-left: 32%;
+}
+
+
+@media screen and (max-width: 600px) {
+  #page1 {
+    background: rgba(244, 67, 54, 0);
+    color: #fff;
+    left: 4%;
+    top: 13%;
+    padding: 15px;
+  }
+
+  #page2 {
+    background: rgba(244, 67, 54, 0);
+    color: #fff;
+    left: 5%;
+    position: relative;
+    padding: 45px;
+    margin-top: calc(6.5% - 53.5px);
+  }
+
+  #image456 {
+    overflow: hidden;
+    height: 100vh;
+    background: url(image/fondo\ 35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #image123 {
+    overflow: hidden;
+    height: 100vh;
+    background: url(image/fondo34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animate 2s infinite .2s ease-in-out;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(30% - 194px);
+    left: calc(50% - 40px);
+    transition: all .3s ease-in;
+  }
+
+  .form {
+    width: 100%;
+    height: 100%;
+    top: 25%;
+    left: 15%;
+    position: absolute;
+    padding: 70px 40px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #image456 {
+    overflow: hidden;
+    height: 100vh;
+    background: url(image/fondo\ 35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: none;
+  }
+
+  #image123 {
+    overflow: hidden;
+    height: 100vh;
+    background: url(image/fondo34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #page1 {
+    width: 320px;
+    height: 485px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    left: 27%;
+    position: relative;
+    padding: 15px;
+    top: 20%;
+  }
+
+  #page2 {
+    width: 320px;
+    height: 485px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    left: 27%;
+    position: relative;
+    padding: 15px;
+    top: 20%;
+  }
+
+  footer {
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    max-width: 100%;
+    position: absolute;
+    margin-top: calc(-5%);
+    margin-left: 22%;
+  }
 }
