@@ -4,7 +4,6 @@
 
 - [Índice](#índice)
 - [Resumen del proyecto](#resumen-del-proyecto)
-- [Imagen del proyecto](#imagen-del-proyecto)
 - [Investigación UX](#investigacion-ux)
   - [Usuarios](#usuarios)
   - [Objetivos del proyecto](#objetivos-del-proyecto)
