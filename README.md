@@ -21,10 +21,6 @@ En este proyecto se trata de una aplicación web que le permita interactuar al u
 por lo cual conlleva a enterarse el final de las películas de manera reservada.
 Los usuarios son cualquier persona natural (cinefilos).
 
-## Imagen del proyecto
-![pantallafinal1](image-prototipo/pantallafinal1.jpg)
-![pantallafinal](image-prototipo/pantallafinal.jpg)
-
 ## Investigación UX
 
 ### Usuarios
@@ -54,5 +50,5 @@ generando en pantallas diferentes.
 ![pantalla3](src/image/screen2.png)
 
 ### Feedback Final
-![pantallaFeedbak2](src/image/pantallaFeedbak2.png)
+![pantallaFeedbak2](src/image/pantallafeedbak2.png)
 - En el feedback las mejoras que realicé en prototipo de papel es muy diferente a lo que se generó ahora, pues en una pantalla muestra los botones de cifrar, limpiar y descifrar, en un solo bloque en horizontal, lo mismo para el botón regresar y el botón enviar, realizé un cambio del background de la pantalla agregé el botón enviar, ya no como muestro en la figura anterior.
