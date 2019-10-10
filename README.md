@@ -43,7 +43,7 @@ Este sitio esta creado para que el mensaje sea encriptado de manera confidencial
 
 ### Colocación del primer prototipo en papel
 
-![pantalla1](image/pantalla1.jpg)
+![pantalla1](image/pantalla1.png)
 
 ### Resumen del feedback
 - En el feedback de las mejoras que realicé en prototipo de papel es generar una sola pantalla para cifrar y descifrar, ya no como muestro en la figura anterior,
@@ -54,5 +54,5 @@ generando en pantallas diferentes.
 ![pantalla3](image/screen2.png)
 
 ### Feedback Final
-![pantallaFeedbak2](image/pantallaFeedbak2.jpg)
+![pantallaFeedbak2](image/pantallaFeedbak2.png)
 - En el feedback las mejoras que realicé en prototipo de papel es muy diferente a lo que se generó ahora, pues en una pantalla muestra los botones de cifrar, limpiar y descifrar, en un solo bloque en horizontal, lo mismo para el botón regresar y el botón enviar, realizé un cambio del background de la pantalla agregé el botón enviar, ya no como muestro en la figura anterior.
