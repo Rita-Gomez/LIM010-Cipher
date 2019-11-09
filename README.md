@@ -33,4 +33,4 @@ En las entrevistas previas mis entrevistados fueron dos personas un doctor y un 
 
 -Fue por eso que implementé un botón con las función reset dentro de mi form.
  
-<img src="./src/Balsamiq/final1.jpg">
+<img src="./src/Balsamiq/final.png">

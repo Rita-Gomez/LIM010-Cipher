@@ -11,6 +11,7 @@ const back_two = document.getElementById('back2');
 //VISTAS
 const vista_1 = document.getElementById('vista1');
 const vista_2 = document.getElementById('vista2');
+
 const vista_3 = document.getElementById('vista3');
 const vista_4 = document.getElementById('vista4');
 const vista_5 = document.getElementById('vista5')
@@ -20,20 +21,21 @@ let password = 0;
 aceptar.addEventListener('click', () => {
 const contra1 = contra.value;
 
-if (password < 2) {
+if (password <3) {
     if (contra1 === 'L') {
     vista_1.classList.add('hide');
     vista_3.classList.remove('hide');
     }
-    else {
-    document.getElementById('error').innerHTML = 'Contraseña incorrecta'
-    password++;
-    }
-    } else {
-    vista_1.classList.add('hide');
-    vista_2.classList.remove('hide');
-    }
-});
+    else  {
+        document.getElementById('error').innerHTML = 'Contraseña incorrecta'
+        password++;
+        }
+        } else {
+        vista_1.classList.add('hide');
+        vista_2.classList.remove('hide');
+        
+ 
+}});
 cifrar.addEventListener('click',() =>{
     let text_cifrar = texto_cifrar.value;
     let number_cifrar = numeros.value;
